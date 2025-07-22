@@ -1,11 +1,8 @@
-/*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
 
-  /*========== Colors ==========*/
   --first-color: #069c54;
   --first-color-alt: #048654;
   --title-color: #393939;
@@ -14,7 +11,6 @@
   --body-color: #fbfefd;
   --container-color: #ffffff;
 
-  /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
@@ -24,11 +20,9 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
-  /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margenes ==========*/
   --mb-1: 0.5rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
@@ -36,7 +30,6 @@
   --mb-5: 2.5rem;
   --mb-6: 3rem;
 
-  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -143,9 +136,7 @@ body.dark-theme {
 .bd-container {
   max-width: 960px;
   width: calc(100% - 2rem);
-  margin-left: var(--mb-2);
-  margin-inline: 1.5rem;
-  margin-right: var(--mb-2);
+  margin: var(--mb-2);
 }
 
 .bd-grid {
@@ -217,22 +208,22 @@ body.dark-theme {
   cursor: pointer;
 }
 
-/* Show menu */
+/* Show Menu */
 .show-menu {
   top: var(--header-height);
 }
 
-/* Active menu */
+/* Active Menu */
 .active-link {
   color: var(--first-color);
 }
 
-/* Change background header */
+/* Change Background Header */
 .scroll-header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Scroll top */
+/* Scroll Top */
 .scrolltop {
   position: fixed;
   right: 1rem;
@@ -257,7 +248,7 @@ body.dark-theme {
   color: var(--body-color);
 }
 
-/* Show scrolltop */
+/* Show Scrolltop */
 .show-scroll {
   visibility: visible;
   bottom: 1.5rem;
@@ -451,7 +442,7 @@ body.dark-theme {
 
 /*========== FOOTER ==========*/
 .footer__container {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   row-gap: 2rem;
 }
 
@@ -539,7 +530,7 @@ body.dark-theme {
   }
 
   .nav {
-    height: calc(var(--header-height) + 1.5rem);
+    height: calc(var(--header-height) + 2rem);
   }
   .nav__menu {
     margin-left: auto;
@@ -588,10 +579,12 @@ body.dark-theme {
 
 @media screen and (min-width: 960px) {
   .bd-container {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
   }
 
+  .home {
+    padding-top: 8rem;
+  }
   .home__img {
     width: 500px;
   }
